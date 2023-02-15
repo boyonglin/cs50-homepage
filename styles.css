@@ -1,10 +1,44 @@
+body {
+    color: #5E5B55;
+    Font-Family: 'Open Sans', Sans-Serif;
+    font-size: 15px;
+    -ms-overflow-style: none;   /* IE and Edge */
+    scrollbar-width: none;      /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari and Opera */
+}
+
+h2, h3, h4, .hero-title {
+    text-transform: uppercase;
+    font-family: 'Poppins', Sans-Serif;
+}
+
+h2 {
+    font-size: small;
+    font-weight: 300;
+    padding: 1.5rem 0;
+}
+
+h3 {
+    color: #191919;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+h4 {
+    color: #191919;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
 .bg {
-    background-color: #fff;
+    background-color: #F2F2F2;
 }
 
 .footer {
-    border-top: 1px solid rgba(94, 91, 85, 0.2);
-    color: #5E5B55;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
     font-size: small;
 }
 
@@ -12,12 +46,12 @@
     Font-Family: 'Work Sans', Sans-Serif;
 }
 
-.opensans {
-    Font-Family: 'Open Sans', Sans-Serif;
-}
-
 .poppin {
     Font-Family: 'Poppins', Sans-Serif;
+}
+
+.navbar, .nav-link {
+    transition: all 0.5s cubic-bezier(.455,.03,.515,.955);
 }
 
 .hero-container {
@@ -25,12 +59,20 @@
     background-color: #DBD5C9;
 }
 
-img {
-    width: 60dvh;
-    max-height: 100%;
+.carousel {
+    max-width: 80dvw;
+    height: 60dvh;
+    aspect-ratio: auto 1070 / 1184;
+    overflow: hidden;
 }
 
-.hero-text {
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-title {
     text-align: center;
     position: absolute;
     font-size: 5rem;
@@ -41,27 +83,100 @@ img {
     color: white;
 }
 
-.me-md-12 {
-    margin-right: 12rem;
+.me-md-6 {
+    margin-right: 6rem;
 }
 
-@media (max-width: 767.98px) {
-    .me-md-6 {
-        margin-right: 0rem;
-    }
+.ms-md-6 {
+    margin-left: 6rem;
+}
 
-    .left {
-        position: absolute;
-        font-size: 4rem;
-        font-weight: 600;
-        transform: translate(-50%, -300%);
-    }
+.social-links {
+    font-size: large;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s cubic-bezier(.455,.03,.515,.955);
+}
 
-    .right {
-        position: absolute;
-        font-size: 4rem;
-        font-weight: 600;
-        transform: translate(-50%, 200%);
+.social-links:hover {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.intro {
+    margin-bottom: 5rem;
+    padding: 1rem;
+}
+
+.intro p {
+    max-width: 65%;
+}
+
+.modal-brand {
+    width: 3rem;
+}
+
+.more-left {
+    background-color: white;
+    height: 100dvh;
+}
+
+.more-right {
+    width: max(50%, 200px);
+}
+
+#scroll-img {
+    transition: all 0.5s cubic-bezier(.455,.03,.515,.955);
+    max-width: 70dvh;
+    height: 60dvh;
+    aspect-ratio: auto 1070 / 1184;
+    overflow: hidden;
+}
+
+#scroll-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#scroll-img.shrink {
+    transform: scale(0.85);
+}
+
+#scroll-img.grow {
+    transform: scale(1.15);
+}
+
+.more-link a {
+    display: inline-block;
+    padding: 2rem 0 0.5rem 0;
+    color: #191919;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.5s cubic-bezier(.455,.03,.515,.955);
+}
+
+.more-link a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #191919;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.2s ease-out;
+}
+
+.more-link a:hover::before {
+    transform: scaleX(0);
+    transform-origin: right;
+    transition-delay: 0.15s;
+}
+
+@media (min-width: 768px) {
+    .mt-md-6 {
+        margin-top: 4rem;
     }
 }
 
@@ -70,13 +185,41 @@ img {
         font-size: 1.5rem;
       }
 
-    .vw-lg-50 {
-        width: 50dvh;
+    .fill-lg {
+        width: 50%;
     }
 
-    .vw-lg-50 li {
-        width: 25dvh;
+    .fill-lg li {
+        width: 50%;
         text-align: center;
+    }
+
+    .me-md-6 {
+        margin-right: 0rem;
+    }
+
+    .ms-md-6 {
+        margin-left: 0rem;
+    }
+
+    .left {
+        position: relative;
+        font-size: 4rem;
+        font-weight: 600;
+        top: -30dvh;
+        left: -50%;
+        display: block;
+        transform: translate(50%, 50%);
+    }
+
+    .right {
+        position: relative;
+        font-size: 4rem;
+        font-weight: 600;
+        bottom: -30dvh;
+        left: -50%;
+        display: block;
+        transform: translate(50%, -50%);
     }
 }
 
