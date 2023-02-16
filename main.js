@@ -37,3 +37,12 @@ $(window).on("wheel", function (event) {
     $("#scroll-img").addClass("grow");
   }
 });
+
+$('#datePicker').datepicker({
+  format: "yyyy/mm/dd",
+  startDate: "2023-01-01",
+  endDate: "2040-01-01",
+  todayBtn: "linked",
+  autoclose: true,
+  todayHighlight: true,
+});
