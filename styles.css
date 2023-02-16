@@ -1,3 +1,4 @@
+/* html */
 body {
     color: #5E5B55;
     Font-Family: 'Open Sans', Sans-Serif;
@@ -33,6 +34,7 @@ h4 {
     font-weight: 600;
 }
 
+/* class */
 .bg {
     background-color: #F2F2F2;
 }
@@ -199,6 +201,7 @@ ol::marker{
     padding-right: 1rem;
  }
 
+ /* date picker */
 .datepicker td, .datepicker th {
     width: 2.5rem;
     height: 2.5rem;
@@ -215,6 +218,7 @@ ol::marker{
     background-image: none;
 }
 
+/* responsive */
 @media (max-width: 767.98px) {
     .intro {
         margin-bottom: 2rem;

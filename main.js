@@ -38,6 +38,7 @@ $(window).on("wheel", function (event) {
   }
 });
 
+// bootstrap datepicker
 $('#datePicker').datepicker({
   format: "yyyy/mm/dd",
   startDate: "2023-01-01",
