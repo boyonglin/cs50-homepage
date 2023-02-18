@@ -15,17 +15,26 @@ myModalEl.addEventListener("hidden.bs.modal", function (event) {
   modalInShownState = false;
 });
 
+// dynamic detection of window width
+var windowsize = $(window).width();
+
+$(window).resize(function() {
+  var windowsize = $(window).width();
+});
+
 $(window).on("wheel", function (event) {
   // control nav transition
   if (modalInShownState == false) {
-    if (event.originalEvent.deltaY < 0 && scrollY < innerHeight) {
-      // wheeled up
-      $(".nav-link").css("font-size", "1.75rem");
-      $(".navbar").addClass("my-3");
-    } else {
-      // wheeled down
-      $(".nav-link").css("font-size", "1.5rem");
-      $(".navbar").removeClass("my-3");
+    if (windowsize > 768) {
+      if (event.originalEvent.deltaY < 0 && scrollY < innerHeight) {
+        // wheeled up
+        $(".nav-link").css("font-size", "1.75rem");
+        $(".navbar").addClass("my-3");
+      } else {
+        // wheeled down
+        $(".nav-link").css("font-size", "1.5rem");
+        $(".navbar").removeClass("my-3");
+      }
     }
   }
   // control img transition
