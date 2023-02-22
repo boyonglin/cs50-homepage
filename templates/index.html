@@ -1,0 +1,218 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+        <!-- navigation menu -->
+        <nav class="fixed-top navbar navbar-expand-md navbar-light my-3 container">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse fs-3 worksans" id="navbarToggler">
+                    <ul class="navbar-nav fs-lg-3 mt-2 mt-md-0 me-lg-auto fill-lg">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" aria-current="page" href="/about.html">About</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="/blog.html">Blog</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav fs-lg-3 fill-lg">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="/services.html">Services</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" aria-current="page" href="/reservation.html">Reservation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- hero section -->
+        <section class="hero-container position-relative">
+            <!-- carousel -->
+            <div id="heroCarousel" class="slide carousel position-absolute top-50 start-50 translate-middle mt-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../static/images/home/zhenya-bg@1x.webp" alt="Milktea Flower">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/images/home/rafal-bojar-home-1@1x.webp" alt="Milktea Flower-2">
+                    </div>
+                </div>
+            </div>
+            <!-- title -->
+            <div class="row">
+                <div class="hero-title mt-4">
+                    <span class="me-md-6 left">Milktea</span>
+                    <span class="right ms-md-6">Flower</span>
+                </div>
+            </div>
+            <!-- social links -->
+            <footer class="d-flex justify-content-center position-absolute bottom-0 start-50 translate-middle-x worksans">
+                <a href="https://www.instagram.com/milkteaflowerjin/" class="p-3 social-links">Instagram</a>
+                <a href="https://twitter.com/milkteaflowerj/" class="p-3 social-links">Twitter</a>
+            </footer>
+        </section>
+        <!-- services section -->
+        <section>
+            <h2 class="text-center">My Main Services</h2>
+            <div class="container overflow-hidden">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="intro">
+                            <h3><mark type="button" data-bs-toggle="modal" data-bs-target="#meetHypnModal" style="background: #DBD5C9;">Hypnosis</mark>Therapy</h3>
+                            <p class="mt-4">Hypnosis therapy is a gentle and effective way to access the power of your subconscious mind and promote personal growth. By inducing a state of deep relaxation and heightened focus, hypnotherapy can help overcome negative habits and emotions, reduce anxiety, and achieve personal goals.</p>
+                        </div>
+                        <div class="intro">
+                            <h3>Guide Workshop</h3>
+                            <p class="mt-3">A guide workshop is a powerful way to learn the skills and tools necessary to guide yourself or others towards personal growth and positive change. With guidance from experienced teachers and supportive peers, you can develop the confidence and ability to help yourself and others navigate life's challenges and achieve personal goals.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mt-md-6">
+                        <div class="intro">
+                            <h3>Relaxation Exercise</h3>
+                            <p class="mt-3">Relaxation exercise is a simple and effective way to reduce stress, improve focus, and promote overall well-being. By practicing relaxation techniques such as deep breathing, meditation, or yoga, you can achieve greater physical and mental relaxation, and enhance your overall health and happiness.</p>
+                        </div>
+                        <div class="intro">
+                            <h3><mark type="button" data-bs-toggle="modal" data-bs-target="#meetHypnModal" style="background: #DBD5C9;">Hypnosis</mark>Programme</h3>
+                            <p class="mt-4">A hypnosis program is a structured and personalized approach to achieving personal growth and overcoming negative habits and emotions. By working with a certified hypnotherapist, you can access the power of your subconscious mind and achieve your personal goals with ease and confidence..</p>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="meetHypnModal" tabindex="-1" aria-labelledby="meetHypnModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content position-relative p-4">
+                                <button type="button" class="btn-close p-4 position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="d-flex justify-content-center">
+                                    <img src="../static/images/brand-logo.png" alt="@milkteaflowerjin" class="m-4" style="width: 3rem;">
+                                </div>
+                                <div class="modal-header border-0 mb-2">
+                                    <h3 id="meetHypnModalLabel" class="m-0 flex-fill text-center">Meet Hypnosis</h3>
+                                </div>
+                                <div class="modal-body p-4 pt-2">
+                                    Hypnosis is a therapeutic technique that can help you access your subconscious mind and promote relaxation, concentration, and heightened suggestibility. During hypnosis, a trained therapist will guide you through a process of deep relaxation and focus, helping you tap into your inner resources to overcome negative habits, reduce anxiety, and achieve personal goals.
+                                    <br><br>
+                                    If you're new to hypnosis, it can be helpful to approach it with an open mind and a willingness to explore new experiences. With the guidance of a skilled hypnotherapist, you can learn to relax deeply, tap into your inner resources, and make positive changes in your life.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- more section -->
+        <section class="more-section">
+            <div class="row">
+                <!-- left img -->
+                <div class="col-12 col-md-6 more-left position-relative">
+                    <div class="position-absolute top-50 start-50 translate-middle">
+                        <div id="scroll-img">
+                            <img src="../static/images/home/cure-home-1.webp" alt="Heal-1">
+                        </div>
+                        <div class="hero-title">
+                            <span style="color: rgba(255, 255, 255, 0.9)">H.</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- right content -->
+                <div class="col-12 col-md-6 text-center text-md-start ps-0 d-flex align-items-center align-items-md-end flex-column"  style="height: 100dvh;">
+                    <div class="w-75">
+                        <h2 class="mb-4">Why Hypnosis</h2>
+                        <h3>Heal</h3>
+                        <h2>
+                            Unlock your potential / Overcome obstacles
+                            <br>
+                            Enhance your well-being / Find your inner voice
+                        </h2>
+                        <div class="my-5 d-flex justify-content-center justify-content-md-start">
+                            <p class="more-right">Discover benefits and applications of hypnosis for personal growth, healing, and behavior change.</p>
+                        </div>
+                        <h4 class="more-link">
+                            <a href="blog.html">More<i class="bi bi-arrow-right-short"></i></a>
+                        </h4>
+                    </div>
+                    <div class="mt-auto" id="scroll-img-bottom">
+                        <img src="../static/images/home/cure-home-2.webp" alt="Heal-2">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- reservation section -->
+        <section>
+            <!-- head -->
+            <h2 class="text-center mb-4">Make Your Reservation</h2>
+            <div class="container">
+                <h3 class="text-center">CREATING A NEW BLUEPRINT</h3>
+                <div class="d-flex justify-content-center">
+                    <div class="fs-6 pe-3 m-4"><i class="bi bi-clock" style="margin-right: 0.75rem;"></i>2hrs</div>
+                    <div class="fs-6 m-4"><i class="bi bi-camera-video" style="margin-right: 0.75rem;"></i>Zoom</div>
+                </div>
+                <div class="row mt-4">
+                    <!-- steps -->
+                    <div class="col-12 col-md-6">
+                        <div class="px-3 my-3 my-md-5">
+                            <p>Single hypnotherapy session 2 hours / NT$ 3,800</p>
+                            <h2 class="mb-0">Reservation Steps</h2>
+                            <ul id="step-list">
+                                <ol>Click on the calendar to select your preferred date & time, leave your name, email and phone number.</ol>
+                                <ol>Within 24 hours you will receive a reply from Hypnotist Jin with payment details (credit card accepted) and a consent form.</ol>
+                                <ol>Once the payment has been made, please complete the form again to complete the appointment.</ol>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- form -->
+                    <div class="col-12 col-md-6">
+                        <div class="d-flex justify-content-center d-md-none">
+                            <img src="../static/images/brand-logo.png" alt="@milkteaflowerjin" class="m-4" style="width: 3rem;">
+                        </div>
+                        <form class="px-lg-5 p-3">
+                            <div class="mb-4">
+                                <label for="datePicker" class="form-label">Date</label>
+                                <div class="input-group">
+                                    <input autocomplete="off" type="text" class="form-control" id="datePicker" name="date" required>
+                                    <span class="input-group-text"><i class="bi bi-calendar"></i></span>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label for="selectTime" class="form-label">Time</label>
+                                <select class="form-select" id="selectTime" name="time" required>
+                                    <option value="" hidden>Select a time</option>
+                                    {% for time in times %}
+                                        <option value="{{ time }}">{{ time }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label for="inputName" class="form-label">Full Name</label>
+                                <input autocomplete="off" type="text" class="form-control" id="inputName" name="fullName" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="inputEmail" class="form-label">Email address</label>
+                                <input autocomplete="off" type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" name="email" required>
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                              </div>
+                              <div class="mb-4">
+                                <label for="inputPhone" class="form-label">Phone Number (Optional)</label>
+                                <input autocomplete="off" type="text" class="form-control" id="inputPhone" name="phone">
+                            </div>
+                            <div class="mb-4 form-check">
+                                <input type="checkbox" class="form-check-input" id="Check">
+                                <label class="form-check-label" for="Check">I'm interested in a conversation before a hypnotherapy session.</label>
+                            </div>
+                            <div class="d-grid gap-2 col-12 col-lg-6 mx-auto mt-5">
+                                <button type="submit" class="btn btn-dark btn-lg schedule-btn">Schedule Hypnosis</button>
+                            </div>
+                        </form>
+                        <form action="/deregister" method="post">
+	<input name="id" type="hidden" value="1">
+	<input type="submit" value="Deregister">
+</form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer class="footer mt-5 py-3 text-center container">Copyright © 2023 CS50 Clancy. Hypnotist Jin.</footer>
+
+{% endblock %}

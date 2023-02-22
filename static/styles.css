@@ -5,6 +5,7 @@ body {
     font-size: 15px;
     -ms-overflow-style: none;   /* IE and Edge */
     scrollbar-width: none;      /* Firefox */
+    background-color: #F2F2F2
 }
 
 body::-webkit-scrollbar {
@@ -35,10 +36,6 @@ h4 {
 }
 
 /* class */
-.bg {
-    background-color: #F2F2F2;
-}
-
 .footer {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     font-size: small;
