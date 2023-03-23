@@ -1,4 +1,4 @@
-# cs50-homepage
+# cs50x-homepage
 > Continuing with the CS50x week 8 problem sets and using Flask to organize the website in week 9.
 
 ---
@@ -24,7 +24,7 @@ Credits:
 - [ ] reservation.html
 
 ```
-cs50-homepage
+cs50x-homepage
 ├─ app.py
 ├─ images
 │  ├─ brand-logo.png
