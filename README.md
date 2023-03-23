@@ -1,8 +1,19 @@
 # cs50-homepage
+>
 
-**2023.02.16**<br>
-Code by Clancy<br>
-Reference: https://zhenyary.com/
+Code: @Clancy Lin
+
+Credits:
+
+	Images:
+		Zhenya Rynzhuk (zhenyary.com)
+      Milktea Flower (@milkteaflowerjin)
+
+	Icons:
+		Bootstrap Icons (icons.getbootstrap.com)
+
+	Other:
+		Flask (flask.palletsprojects.com)
 
 **Todo**
 - [ ] about.html
