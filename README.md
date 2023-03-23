@@ -1,5 +1,7 @@
 # cs50-homepage
->
+> Continuing with the CS50x week 8 problem sets and using Flask to organize the website in week 9.
+
+---
 
 Code: @Clancy Lin
 
