@@ -242,6 +242,11 @@ ol::marker{
         width: 50%;
         text-align: center;
     }
+
+    .fill-lg-nav li {
+        width: 50%;
+        text-align: center;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -251,6 +256,14 @@ ol::marker{
 
     .fill-lg {
         width: 50%;
+    }
+
+    .fill-lg-nav {
+        width: 40%;
+    }
+
+    .fill-lg-center {
+        width: 20%;
     }
 
     .me-md-6 {

@@ -38,7 +38,7 @@ $(window).on("wheel", function (event) {
     }
   }
   // control img transition
-  if (scrollY > $(".more-section").offset().top - innerHeight + 300) {
+  if (scrollY > $(".more-section").offset().top - innerHeight + 400) {
     $("#scroll-img").addClass("shrink");
     $("#scroll-img").removeClass("grow");
   } else {

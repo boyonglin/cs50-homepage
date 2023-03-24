@@ -1,5 +1,42 @@
 {% extends "layout.html" %}
 
 {% block body %}
-    <h1>ABOUT</h1>
+
+        <!-- navigation menu -->
+        <nav class="fixed-top navbar navbar-expand-md navbar-light my-3 container">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse fs-3 worksans d-lg-flex justify-content-between" id="navbarToggler">
+                    <ul class="navbar-nav fs-lg-3 fill-lg-nav">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="/about">About</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="/blog">Blog</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav fs-5 fill-lg-center align-self-stretch d-none d-lg-block">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="/" style="line-height: 2em;">Go Home</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav fs-lg-3 fill-lg-center flex-fill align-self-stretch d-block d-lg-none">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav fs-lg-3 fill-lg-nav d-flex justify-content-end">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="/services">Services</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="/schedule">Schedule</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
 {% endblock %}
