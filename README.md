@@ -9,11 +9,9 @@ Credits:
 
 	Images:
 		Zhenya Rynzhuk (zhenyary.com)
-      Milktea Flower (@milkteaflowerjin)
-
+  		Milktea Flower (@milkteaflowerjin)
 	Icons:
 		Bootstrap Icons (icons.getbootstrap.com)
-
 	Other:
 		Flask (flask.palletsprojects.com)
 
